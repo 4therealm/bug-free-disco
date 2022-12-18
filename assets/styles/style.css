@@ -146,6 +146,7 @@ flex-grow:1;
 #app-link-1{
 flex-grow:1.5;
 flex-shrink: 1;
+flex-basis:1;
 }
 
 
