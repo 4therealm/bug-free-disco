@@ -1,0 +1,434 @@
+/*  GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport*/
+
+
+
+
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+body{
+  width: 97vw;
+  background-attachment: fixed;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+header{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  max-height: max-content;
+  max-width: 98vw;
+  width: fit-content;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+#top-nav {
+  display: flex;
+  width: 100vw;
+  max-width:100%;
+  max-height: min-content;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start; 
+  list-style-type: none;
+  /* border: 5px solid red; */
+}
+.nav-links a {
+  display: inline-block;
+  color: violet;
+  text-decoration: none;
+  /* border: 1px solid red; */
+}
+  
+#banner{
+  height: 70vh;
+  position: relative;
+}
+#myname {
+  font-size: 3rem;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  color: whitesmoke;
+}
+/* using px fgor image so it is samer number both h w */
+#profilepic {
+  width: 200px;
+  height:200px;
+  position: absolute;
+  left: 20%;
+  top: 38%;
+  border-radius: 100%;
+  }
+  #banner p{
+    position: absolute;
+    top: 70%;
+    left:44%;
+    font-size: 3rem;
+    font-style: italic;
+    color:whitesmoke;
+  }
+.flex-container{
+  display: flex;
+  max-width: 100%;
+  margin-bottom: 2%;
+  background: rgb(79,78,85);
+background: radial-gradient(circle, rgba(79, 78, 85, 0.511) 0%, rgba(0, 0, 0, 0.739) 100%);
+  flex-wrap: nowrap;
+}
+.left-column{
+  width: auto;
+  min-width: min-content;
+  text-align: right;
+  border-right: 2px solid rgb(252, 252, 252);
+}
+.right-column{
+width:100%;
+overflow-wrap: normal;
+}
+
+.title {
+  color: violet;
+  min-width: 15vw;
+}
+#my-work {
+  padding: 0px; 
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+}
+.app-links {
+  position: relative;
+  
+  flex:1 1 1;
+}
+#main-app{
+ flex: 1 1 1;
+  width: 550px;
+}
+
+#my-work a h3 {
+  position: absolute;
+  bottom: 2.5vh;
+  left: .6vw;
+  z-index: 1;
+  min-width: min-content;
+  padding: 5px 5px 5px 10px;
+  background-color: rgba(0, 0, 0, 0.576);
+  border: 1px solid whitesmoke;
+  border-left: 0px;
+  border-radius: 5px; 
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  color: violet;
+}
+/* contact section */
+
+#contact { 
+   width: 100%;
+   display: flex; 
+   } 
+#contact ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style-type: none;
+}
+#contact a{
+  font-size: x-large;
+}
+footer{
+  max-width: 100%;
+  padding: 10px;
+  /* height: fit-content; */
+  text-align: center;
+  /* border: 5px solid red; */
+}
+footer h5 {
+  font-size: xx-large;
+  font-style: oblique;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:678px) and (max-width: 993px)
+{
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.left-column{
+  width: auto;
+  min-width: min-content;
+  text-align: right;
+  border-right: 2px solid rgb(252, 252, 252);
+}
+.title {
+  width:15vw;
+  color: violet;
+  min-width:min-content;
+}
+}
+#main-app{
+width: 650px;
+}
+#my-work a h3 {
+  position: absolute;
+  bottom: 2.5vh;
+  left: 1vw;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:375px) and (max-width: 678px) {
+  *{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 19px;
+  }
+  
+  body{
+    width: 100%;
+    background-attachment: fixed;
+    background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  }
+  header{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    max-height: 10%;
+    max-width:100%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+  
+  #top-nav {
+    display: flex;
+    width:100vw;
+    max-height: max-content;
+    padding: 0;
+    margin: 0;
+    gap: .1vw;
+    justify-content: space-evenly; 
+    list-style-type: none;
+    /* border: 5px solid red; */
+  }
+  .nav-links a {
+    color: violet;
+    text-decoration: none;
+    /* border: 1px solid red; */
+  }
+    
+  #banner{
+    height: 100vh;
+    position: relative;
+  }
+  #myname {
+    font-size: 4rem;
+    position: absolute;
+    left: 17vw;
+    top: 14vw;
+    color: whitesmoke;
+  }
+  /* using px fgor image so it is samer number both h w */
+  #profilepic {
+    width: 200px;
+    height:200px;
+    position: absolute;
+    left: 28vw;
+    top: 50vw;
+    border-radius: 100%;
+    }
+    #banner p{
+      position: absolute;
+      top: 100vw;
+      left:25vw;
+      font-size: 3rem;
+      font-style: italic;
+      color:whitesmoke;
+    }
+  .flex-container{
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    margin-bottom: 5%;
+    background: rgb(79,78,85);
+  background: radial-gradient(circle, rgba(79, 78, 85, 0.511) 0%, rgba(0, 0, 0, 0.739) 100%);
+    flex-wrap: nowrap;
+  }
+  .left-column{
+    margin-bottom: 10px;
+    width: auto;
+    min-width: min-content;
+    text-align: center;
+    border-right: 0px;
+  }
+  .right-column{
+  width:100%;
+  overflow-wrap: normal;
+  padding: 20px;
+  }
+  
+  .title {
+    color: violet;
+    min-width: 15vw;
+  }
+  #my-work {
+    padding: 0px; 
+    display: flex;
+    flex-flow: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .app-links img {
+    position: relative;
+    width: 95vw;
+    flex:1 1 1;
+  }
+  #main-app{
+   flex: 1 1 1;
+    width: 95vw;
+  }
+  
+  #my-work a h3 {
+    position: absolute;
+    bottom: 2.5vh;
+    left: .6vw;
+    z-index: 1;
+    min-width: min-content;
+    padding: 5px 5px 5px 10px;
+    background-color: rgba(0, 0, 0, 0.576);
+    border: 1px solid whitesmoke;
+    border-left: 0px;
+    border-radius: 5px; 
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: violet;
+  }
+  /* contact section */
+  
+  #contact { 
+     width: 100%;
+     display: flex; 
+     } 
+  #contact ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+  }
+  #contact a{
+    font-size: small;
+  }
+  
+}
