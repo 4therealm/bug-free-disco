@@ -224,7 +224,16 @@ footer h5 {
 .right-column {
 text-align: center;
 }
-
+#my-work{
+  justify-content: center;
+}
+.app-links {
+  margin-bottom: 20px;
+}
+#contact ul{
+  gap: 75px
+  ;
+}
 }
 
 @media screen and (min-width:481px) and (max-width:768px) {
