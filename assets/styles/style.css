@@ -181,6 +181,9 @@ footer h5 {
     padding: 0;
     margin: 0;
   }
+  body{
+    max-width: 92vw;
+  }
   /* eliminating margin and padding allowed for easier use of VW  */
   #top-nav{
     max-width: 93vw;
@@ -230,9 +233,14 @@ text-align: center;
 .app-links {
   margin-bottom: 20px;
 }
+#contact {
+  margin-bottom: 10vh;
+}
 #contact ul{
-  gap: 75px
-  ;
+  gap: 75px;
+}
+footer{
+  max-width: 92vw;
 }
 }
 
