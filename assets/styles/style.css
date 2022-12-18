@@ -181,13 +181,14 @@ footer h5 {
     padding: 0;
     margin: 0;
   }
+  /* eliminating margin and padding allowed for easier use of VW  */
   #top-nav{
     max-width: 93vw;
     justify-content: space-evenly;
   }
   #flex-banner{
   justify-content: center;
-  max-width: 95vw;
+  max-width: 92vw;
   flex-flow: column;
   align-items:center
   }
@@ -204,6 +205,25 @@ footer h5 {
     font-size: 1.5rem;
     align-self: auto;
   }
+  /* changed flex-containers to column */
+  .flex-container {
+    flex-flow: column;
+    align-items: center;
+    max-width: 92vw;
+  }
+  /* removed right border and gave space under where the title will be*/
+  .left-column {
+    min-width: max-content;
+    border-right: none;
+    padding-bottom: 3vh;
+  }
+  /* put bottom border on title instead of whole column */
+.title {
+  border-bottom:.5vh solid whitesmoke;
+}
+.right-column {
+text-align: center;
+}
 
 }
 
