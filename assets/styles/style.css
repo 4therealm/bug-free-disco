@@ -13,8 +13,7 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport*/
 
 
-@media screen and (min-width:994px)
-{
+
 
 *{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -68,33 +67,32 @@ header{
   /* border: 1px solid red; */
 }
   
-#banner{
+#flex-banner{
+  margin-top: 50px;
+  display: flex;
   height: 70vh;
-  position: relative;
+  width: 97vw;
+  justify-content: center;
+
 }
 #myname {
   font-size: 3rem;
-  position: absolute;
-  left: 10%;
-  top: 15%;
   color: whitesmoke;
+  align-self: flex-start;
+  max-width: min-content;
 }
 /* using px fgor image so it is samer number both h w */
 #profilepic {
   width: 200px;
   height:200px;
-  position: absolute;
-  left: 20%;
-  top: 38%;
   border-radius: 100%;
+  align-self: center;
   }
-  #banner p{
-    position: absolute;
-    top: 70%;
-    left:44%;
+  #flex-banner p{
     font-size: 3rem;
     font-style: italic;
     color:whitesmoke;
+    align-self: flex-end;
   }
 .flex-container{
   display: flex;
@@ -106,7 +104,7 @@ background: radial-gradient(circle, rgba(79, 78, 85, 0.511) 0%, rgba(0, 0, 0, 0.
 }
 .left-column{
   width: auto;
-  min-width: min-content;
+  max-width: min-content;
   text-align: right;
   border-right: 2px solid rgb(252, 252, 252);
 }
@@ -286,18 +284,7 @@ width: 650px;
     font-size: 19px;
   }
   
-  body{
-    width: 100%;
-    background-attachment: fixed;
-    background-color:black;
-    background-image:
-    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-  }
+
   header{
     padding: 0px;
     margin: 0px;
