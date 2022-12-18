@@ -130,7 +130,7 @@ overflow-wrap: normal;
 }
 /* the app-links apply to each link unit. with all app-links having a flex-basis of 0 and app-link-1 having a higher flex-grow, it will grow slightly larger than the other link units and fill the space */
 .app-links {
-  flex-grow:1;
+  flex-grow:0.5;
   flex-shrink:2;
   flex-basis:0;
   width: 85vw;
@@ -154,8 +154,8 @@ flex-shrink: 1;
 /* setting flex basis on smaller pics to 1 and main pic to 2 makes the main pic bigger inherently...i think */
 #app-images-1{
   flex-shrink: 1;
-  flex-grow:1;
-  flex-basis:0
+  flex-grow:2;
+  flex-basis:1
 }
 
 .app-title {
@@ -462,15 +462,32 @@ footer h5 {
   /* laptops
   rows */
 @media screen and (min-width:769px) and (max-width:1024px) {
+body{
+  width:100vw;
+}
 #profilepic {
   width: 30vw;
   height: 30vw;
+}
+.flex-container{
+  display: flex;
+  flex-flow: row;
+  padding: 0;
+  width: 96vw;
 }
 .left-column{
   min-width:17vw;
   padding: 0;
   text-align: left;
 }
+.right-column{
+  width:81vw;
+}
+#my-work{
+  width: 81vw;
+  justify-content: space-evenly;
+}
+
 }
 
 
