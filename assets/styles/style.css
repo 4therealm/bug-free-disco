@@ -107,6 +107,8 @@ header{
 }
 /* gradient link will be provided */
 .left-column{
+  flex-shrink: 1;
+  flex-grow:1;
   width: auto;
   text-align: right;
   max-width: 15vw;
@@ -115,6 +117,8 @@ header{
 .right-column{
 max-width:78vw;
 overflow-wrap: normal;
+flex-shrink: 1;
+flex-grow:1;
 }
 /* min width on title designated to keep the vertical borderline aligned throughout the sections */
 .title {
@@ -486,6 +490,10 @@ body{
 #my-work{
   width: 81vw;
   justify-content: space-evenly;
+}
+#contact{
+  max-width: max-content;
+  width: max-content;
 }
 
 }
