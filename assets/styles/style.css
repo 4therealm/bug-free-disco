@@ -18,7 +18,6 @@ THEN I am presented with a responsive layout that adapts to my viewport*/
 *{
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: whitesmoke;
-  margin: 5px;
   padding: 5px;
   box-sizing: border-box;
 }
@@ -48,7 +47,7 @@ header{
   top: 0;
   z-index: 2;
 }
-
+/* navigation bar */
 #top-nav {
   display: flex;
   width: 100vw;
@@ -66,7 +65,7 @@ header{
   text-decoration: none;
   /* border: 1px solid red; */
 }
-  
+  /* banner */
 #flex-banner{
   margin-top: 50px;
   display: flex;
@@ -76,24 +75,28 @@ header{
 
 }
 #myname {
+  flex: shrink 1;
   font-size: 3rem;
   color: whitesmoke;
   align-self: flex-start;
   max-width: min-content;
 }
-/* using px fgor image so it is samer number both h w */
+/* using vw for height and width to keep consistent sizing */
 #profilepic {
-  width: 200px;
-  height:200px;
+  flex-shrink: 1;
+  width: 10vw;
+  height:10vw;
   border-radius: 100%;
   align-self: center;
   }
   #flex-banner p{
+    flex-shrink: 1;
     font-size: 3rem;
     font-style: italic;
     color:whitesmoke;
     align-self: flex-end;
   }
+  /* beginning of main content */
 .flex-container{
   display: flex;
   max-width: 100%;
@@ -126,27 +129,18 @@ overflow-wrap: normal;
 }
 .app-links {
   position: relative;
-  
   flex:1 1 1;
 }
 #main-app{
  flex: 1 1 2;
-  width: 500px;
 }
-
 #my-work a h3 {
-  position: absolute;
-  bottom: 2.5vh;
-  left: .6vw;
   z-index: 1;
   min-width: min-content;
   padding: 5px 5px 5px 10px;
   background-color: rgba(0, 0, 0, 0.576);
   border: 1px solid whitesmoke;
-  border-left: 0px;
   border-radius: 5px; 
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
   color: violet;
 }
 /* contact section */
@@ -168,16 +162,13 @@ overflow-wrap: normal;
 footer{
   max-width: 100%;
   padding: 10px;
-  /* height: fit-content; */
   text-align: center;
-  /* border: 5px solid red; */
 }
 footer h5 {
   font-size: xx-large;
   font-style: oblique;
 }
 
-}
 
 
 
