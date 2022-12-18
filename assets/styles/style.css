@@ -221,27 +221,27 @@ footer h5 {
     padding-bottom: 3vh;
   }
   /* put bottom border on title instead of whole column */
-.title {
+ .title {
   border-bottom:.5vh solid whitesmoke;
-}
-.right-column {
-text-align: center;
-}
-#my-work{
+ }
+ .right-column {
+ text-align: center;
+ }
+ #my-work{
   justify-content: center;
-}
-.app-links {
-  margin-bottom: 20px;
-}
-#contact {
+ }
+ .app-links {
+   margin-bottom: 20px;
+ }
+ #contact {
   margin-bottom: 10vh;
-}
-#contact ul{
+ }
+ #contact ul{
   gap: 75px;
-}
-footer{
+ }
+ footer{
   max-width: 92vw;
-}
+ }
 }
 
 @media screen and (min-width:481px) and (max-width:768px) {
