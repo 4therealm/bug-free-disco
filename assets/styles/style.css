@@ -244,9 +244,86 @@ footer h5 {
  }
 }
 
-@media screen and (min-width:481px) and (max-width:768px) {
+
+
+
+
+
+
+
+
+
+
+
+
   /* tablets
   columns */
+@media screen and (min-width:481px) and (max-width:768px) {
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    max-width: 100vw;
+  }
+  /* eliminating margin and padding allowed for easier use of VW  */
+  #top-nav{
+    max-width: 100vw;
+    justify-content: space-evenly;
+  }
+  #flex-banner{
+  justify-content: center;
+  max-width: 100vw;
+  flex-flow: column;
+  align-items:center
+  }
+  #myname{
+    align-self:auto;
+    font-size: 2rem;
+  }
+  #profilepic{
+    width: 20vw;
+    height: 20vw;
+    align-self: auto;
+  }
+  #flex-banner p{
+    font-size: 1.5rem;
+    align-self: auto;
+  }
+  /* changed flex-containers to column */
+  .flex-container {
+    flex-flow: column;
+    align-items: center;
+    max-width: 100vw;
+  }
+  /* removed right border and gave space under where the title will be*/
+  .left-column {
+    min-width: max-content;
+    border-right: none;
+    padding-bottom: 3vh;
+  }
+  /* put bottom border on title instead of whole column */
+ .title {
+  border-bottom:.5vh solid whitesmoke;
+ }
+ .right-column {
+ text-align: center;
+ }
+ #my-work{
+  justify-content: center;
+ }
+ .app-links {
+   margin-bottom: 20px;
+ }
+ #contact {
+  margin-bottom: 10vh;
+ }
+ #contact ul{
+  gap: 75px;
+ }
+ footer{
+  max-width: 100vw;
+ }
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
