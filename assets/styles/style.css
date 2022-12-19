@@ -152,7 +152,7 @@ header {
   flex-shrink: 1;
   flex-basis: 50%;
 }
-/* setting flex basis on smaller pics to 1 and main pic to 2 makes the main pic bigger inherently...i think */
+/* setting flex basis on smaller pics to 10% and main pic to 50% makes the main pic bigger inherently...i think */
 #app-images-1 {
   flex-shrink: 1;
   flex-grow: 1;
