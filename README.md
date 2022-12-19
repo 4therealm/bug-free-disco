@@ -1,5 +1,6 @@
 # bug-free-disco
 # Homework assignment 2: Work Portfolio
+Deployed page: https://4therealm.github.io/bug-free-disco/
 ![](assets/images/main%20screenshot.png)
 ![](assets/images/main%20mobile%20screenshot.png)
 ## objective
