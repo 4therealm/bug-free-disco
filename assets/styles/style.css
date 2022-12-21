@@ -90,10 +90,9 @@ header {
 }
 /* beginning of main content */
 .flex-container {
-  display: inline-flex;
-  /* changed to inline-flexbox in order to keep everything in the intended width */
+  display: flex;
+  justify-content: space-between;
   max-width: 100%;
-  padding: 4vw;
   margin-bottom: 2%;
   background: rgb(79, 78, 85);
   background: radial-gradient(circle, rgba(79, 78, 85, 0.511) 0%, rgba(0, 0, 0, 0.739) 100%);
@@ -103,37 +102,39 @@ header {
 .left-column {
   flex-shrink: 1;
   flex-grow: 1;
-  flex-basis: 30%;
+  /* flex-basis: 30%; */
   text-align: right;
-  max-width: 15vw;
+  max-width: 10%;
   border-right: 2px solid rgb(252, 252, 252);
 }
 .right-column {
-  max-width: 78vw;
-  overflow-wrap: normal;
+  max-width: 90%; 
+  /* overflow-wrap: normal; */
   flex-shrink: 1;
   flex-grow: 1;
-  flex-basis: 70%;
+  /* flex-basis: 70%; */
 
 }
 /* min width on title designated to keep the vertical borderline aligned throughout the sections */
 .title {
+  padding-right: 5%;
   color: violet;
-  /* min-width: 8vw; */
+  font-size: 2rem;
 }
 #my-work {
-  max-width: 78vw;
+  max-width: 100%;
   display: flex;
   flex-flow: wrap;
   justify-content: flex-start;
   align-items: center;
+  gap: 5%;
 }
 /* the app-links apply to each link unit. with all app-links having a flex-basis of 0 and app-link-1 having a higher flex-grow, it will grow slightly larger than the other link units and fill the space */
 .app-links {
   flex-grow: 0.5;
   flex-shrink: 1;
   flex-basis: 5%;
-  width: 85vw;
+  width: 100%;
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -167,7 +168,7 @@ header {
   bottom: 6%;
   z-index: 1;
   min-width: min-content;
-  padding: 5px 5px 5px 10px;
+  padding: 5px;
   background-color: rgba(0, 0, 0, 0.576);
   border: 1px solid whitesmoke;
   border-radius: 5px;
@@ -178,22 +179,24 @@ header {
 
 #contact {
   display: flex;
-  max-width: 100vw;
-  width: fit-content;
+  max-width: 100%;
+  /* width: fit-content; */
 }
 #contact ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  width: 78vw;
+  justify-content: space-between;
+  width: 100%;
   list-style-type: none;
 }
 #contact a {
-  font-size: x-large;
+  flex-shrink: 1;
+  display: inline-block;
+  font-size: large;
 }
 footer {
-  max-width: 100vw;
-  padding: 10px;
+  max-width: 100%;
+  /* padding: 10px; */
   text-align: center;
 }
 footer h5 {
@@ -214,22 +217,24 @@ footer h5 {
     margin: 0;
   }
   body {
-    max-width: 92vw;
+    width: 100%;
   }
   /* eliminating margin and padding allowed for easier use of VW  */
 
   header {
-    max-width: 115vw;
-    width: 100vw;
+    width: 100%;
+    justify-content: center;
   }
   #top-nav {
-    width: 112vw;
+    display: flex;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
+    gap: 15%;
   }
   #flex-banner {
     justify-content: center;
-    max-width: 100vw;
+    max-width: 100%;
     flex-flow: column;
     align-items: center;
     gap: 5%;
@@ -251,14 +256,13 @@ footer h5 {
   .flex-container {
     flex-flow: column;
     align-items: center;
-    max-width: 100vw;
-    width: 100vw;
+    width: 100%;
   }
   /* removed right border and gave space under where the title will be*/
   .left-column {
     min-width: max-content;
     border-right: none;
-    padding-bottom: 3vh;
+    padding-bottom: 5%;
   }
   /* put bottom border on title instead of whole column */
   .title {
@@ -269,20 +273,24 @@ footer h5 {
   }
   #my-work {
     justify-content: center;
-    max-width: 0;
   }
   .app-links {
     margin-bottom: 20px;
   }
 
   #contact {
-    margin-bottom: 10vh;
+    margin-bottom: 10%;
   }
   #contact ul {
-    gap: 5vw;
+    gap: 30%;
+    justify-content: space-evenly;
+  }
+  #contact li a{
+    padding: 10% 0% 10% 0%;
+    font-size: 1rem;
   }
   footer {
-    max-width: 100vw;
+    max-width: 100%;
   }
 }
 /* tablets. layout: columns */
@@ -378,7 +386,7 @@ footer h5 {
 /* laptops and larger tablets. layout: rows */
 @media screen and (min-width:769px) and (max-width:1024px) {
   body {
-    width: 100vw;
+    width: 100%;
   }
   #profilepic {
     width: 30vw;
@@ -388,23 +396,24 @@ footer h5 {
     display: flex;
     flex-flow: row;
     padding: 0;
-    width: 96vw;
   }
   .left-column {
-    min-width: 17vw;
+    min-width: 18%;
     padding: 0;
     text-align: left;
   }
   .right-column {
-    width: 81vw;
+    width: 80%;
   }
   #my-work {
-    width: 81vw;
+    width: max-content;
     justify-content: space-evenly;
   }
+  .app-images{
+    flex-shrink: 2;
+  }
   #contact {
-    max-width: max-content;
-    width: max-content;
+    max-width: 100%;
   }
 
 }
